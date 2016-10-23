@@ -5,17 +5,17 @@
     "vmSku": {
       "value": "Standard_A1"
     },
-    "ubuntuOSVersion": {
-      "value": "15.10"
+    "redHatOSVersion": {
+      "value": "7.2"
     },
     "vmssName": {
       "value": "GEN-UNIQUE-32"
     },
     "instanceCount": {
-      "value": 5
+      "value": 2
     },
     "adminUsername": {
-      "value": "ubuntu"
+      "value": "redhat"
     },
     "adminPassword": {
       "value": "GEN-PASSWORD"

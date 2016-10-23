@@ -9,15 +9,14 @@
         "description": "Size of VMs in the VM Scale Set."
       }
     },
-    "ubuntuOSVersion": {
+    "redHatOSVersion": {
       "type": "string",
-      "defaultValue": "14.04.4-LTS",
+      "defaultValue": "7.2",
       "allowedValues": [
-        "15.10",
-        "14.04.4-LTS"
+        "7.2"
       ],
       "metadata": {
-        "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values are: 15.10, 14.04.4-LTS."
+        "description": "The RedHat version for the VM. This will pick a fully patched image of this given RedHat version. Allowed values are: 7.2."
       }
     },
     "vmssName": {
@@ -88,9 +87,9 @@
     "ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
     "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/loadBalancerFrontEnd')]",
     "osType": {
-      "publisher": "Canonical",
-      "offer": "UbuntuServer",
-      "sku": "[parameters('ubuntuOSVersion')]",
+      "publisher": "RedHat",
+      "offer": "RHEL",
+      "sku": "[parameters('redHatOSVersion')]",
       "version": "latest"
     },
     "imageReference": "[variables('osType')]",
