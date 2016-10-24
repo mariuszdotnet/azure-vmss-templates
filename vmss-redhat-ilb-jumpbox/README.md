@@ -1,19 +1,20 @@
-# Simple deployment of a VM Scale Set of Linux VMs with a jumpbox
+# Simple deployment of a VM Scale Set of RedHat Linux VMs with a jumpbox
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2mariuszdotnet%2Fazure-vmss-templates%2Fmaster%2Fazuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F201-vmss-linux-jumpbox%2Fazuredeploy.json" target="_blank">
-    <img src="http://armviz.io/visualizebutton.png"/>
-</a>
-
-This template allows you to deploy a simple VM Scale Set of Linux VMs using the latest patched version of Ubuntu Linux 15.10 or 14.04.4-LTS. This template also deploys a jumpbox with a public IP address in the same virtual network. You can connect to the jumpbox via this public IP address, then connect from there to VMs in the scale set via private IP addresses. To ssh into the jumpbox, you could use the following command:
+This template allows you to deploy a simple VM Scale Set of Linux VMs using the latest patched version of RedHat Linux 7.2. This template also deploys a jumpbox with a public IP address in the same virtual network. You can connect to the jumpbox via this public IP address, then connect from there to VMs in the scale set via private IP addresses. To ssh into the jumpbox, you could use the following command:
 
 ssh {username}@{jumpbox-public-ip-address}
 
 To ssh into one of the VMs in the scale set, go to resources.azure.com to find the private IP address of the VM, make sure you are ssh'ed into the jumpbox, then execute the following command:
 
-ssh {username}@{vm-private-ip-address}
+ssh {username}@{vm-private-ip-address} 
+
+or with the following to test the ILB
+
+ssh -p {vmportnumber} {username}@{ilb-ip-address}
+
+To check Linux Release and Distribution Version run this command in the bash cli on the VM
+
+cat /etc/*-release
 
 PARAMETER RESTRICTIONS
 ======================
