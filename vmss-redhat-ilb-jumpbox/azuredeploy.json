@@ -62,6 +62,25 @@
       "metadata": {
         "description": "Name of the existing subnet in the existing VNET you want to use"
       }
+    },
+    "tomcatUserName": {
+      "type": "string",
+      "defaultValue": "tcdeploy",
+      "metadata": {
+        "description": "User name for Tomcat manager"
+      }
+    },
+    "tomcatPassword": {
+      "type": "string",
+      "metadata": {
+        "description": "Password for Tomcat manager"
+      }
+    },
+    "sshPassPhrase": {
+      "type": "string",
+      "metadata": {
+        "description": "Pass phrase for SSH certificate"
+      }
     }
   },
   "variables": {
@@ -222,6 +241,25 @@
                       }
                     }
                   ]
+                }
+              }
+            ]
+          },
+          "extensionProfile": {
+            "extensions": [
+              {
+                "name": "lapextension",
+                "properties": {
+                  "publisher": "Microsoft.Azure.Extensions",
+                  "type": "CustomScript",
+                  "typeHandlerVersion": "2.0",
+                  "autoUpgradeMinorVersion": true,
+                  "settings": {
+                    "fileUris": [
+                      "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/vsts-tomcat-redhat-vm/scripts/tomcat-setup-redhat.sh"
+                    ],
+                    "commandToExecute": "[concat('sh tomcat-setup-redhat.sh',' ',parameters('adminUsername'),' ',parameters('tomcatUserName'),' ',parameters('tomcatPassword'),' ',parameters('sshPassPhrase'))]"
+                  }
                 }
               }
             ]

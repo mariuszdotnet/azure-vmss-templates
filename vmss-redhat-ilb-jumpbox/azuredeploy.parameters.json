@@ -28,6 +28,16 @@
     },
     "existingVirtualNetworkResourceGroup": {
       "value": "vmss-vnet-rg"
+    },
+     "tomcatUserName": {
+      "value": "mariuszdotnet"
+    },
+
+    "tomcatPassword": {
+      "value": ""
+    },
+    "sshPassPhrase": {
+      "value": "tomcatwebserver"
     }
   }
 }
