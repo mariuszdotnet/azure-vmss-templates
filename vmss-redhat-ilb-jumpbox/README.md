@@ -1,4 +1,4 @@
-# Simple deployment of a VM Scale Set of RedHat Linux VMs with a jumpbox
+# Simple deployment of a VM Scale Set of RedHat Linux VMs with Tomcat Webserver via VM Extensions
 
 This template allows you to deploy a simple VM Scale Set of Linux VMs using the latest patched version of RedHat Linux 7.2. The template depends on an existing virtual netwkr and subnet in a different resource group.
 
