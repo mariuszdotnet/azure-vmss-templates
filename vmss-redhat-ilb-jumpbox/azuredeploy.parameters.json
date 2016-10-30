@@ -9,16 +9,25 @@
       "value": "7.2"
     },
     "vmssName": {
-      "value": "GEN-UNIQUE-32"
+      "value": "apple"
     },
     "instanceCount": {
       "value": 2
     },
     "adminUsername": {
-      "value": "redhat"
+      "value": "mariuszdotnet"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": ""
+    },
+    "existingSubnetName": {
+      "value": "data"
+    },
+    "existingVirtualNetworkName": {
+      "value": "vmss-vnet"
+    },
+    "existingVirtualNetworkResourceGroup": {
+      "value": "vmss-vnet-rg"
     }
   }
 }
