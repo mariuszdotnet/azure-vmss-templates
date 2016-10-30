@@ -9,7 +9,7 @@ $resourceGroupName = 'vmss-rg'
 # Resource Group Location 
 $resourceGroupLocation = 'East US 2' # Run <Get-AzureLocation> to find out azure locations; EXAMPLE: 'East US 2'
 # Name of the deployment
-$deploymentName = 'applybite'
+$deploymentName = 'applebite'
 
 Login-AzureRmAccount
 
@@ -24,10 +24,10 @@ New-AzureRmResourceGroup -Name $resourceGroupName -Location $resourceGroupLocati
 Test-AzureRmResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json" -TemplateParameterFile "$rootPath\azuredeploy.parameters.json"
 
 # Use parameter file
-# New-AzureRmResourceGroupDeployment -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json" -TemplateParameterFile "$rootPath\azuredeploy.parameters.json"
+New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json" -TemplateParameterFile "$rootPath\azuredeploy.parameters.json"
 
 # Input parameters manually via CLI
-New-AzureRmResourceGroupDeployment -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json"
+New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json"
 
 # Delete the deployment
 # Remove-AzureRmResourceGroup $resourceGroupName
