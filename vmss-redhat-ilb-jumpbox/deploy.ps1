@@ -30,4 +30,14 @@ New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -Reso
 New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json"
 
 # Delete the deployment
-# Remove-AzureRmResourceGroup $resourceGroupName
+Remove-AzureRmResourceGroup $resourceGroupName
+
+#VMSS Network Interface Defenition
+Get-Help New-AzureRmVmssIpConfig -Detailed
+Get-Help Add-AzureRmVmssNetworkInterfaceConfiguration -Detailed
+
+# Regular VM Network Interface Defenition
+Get-Help New-AzureRmNetworkInterface -Detailed
+
+
+
