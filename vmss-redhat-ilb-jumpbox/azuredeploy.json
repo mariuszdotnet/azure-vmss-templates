@@ -14,6 +14,12 @@
         "description": "Admin username on all VMs."
       }
     },
+    "loadBalancerPrivateIP": {
+      "type": "string",
+      "metadata": {
+        "description": "Static IP to be assigend to the ILB End Point"
+      }
+    },
     "existingVirtualNetworkName": {
       "type": "string",
       "metadata": {
@@ -103,7 +109,9 @@
     "subnetName": "[parameters('existingSubnetName')]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
     "loadBalancerName": "[concat(variables('namingInfix'), 'lb')]",
+    "loadBalancerPrivateIPAddress": "[parameters('loadBalancerPrivateIP')]",
     "lbID": "[resourceId('Microsoft.Network/loadBalancers',variables('loadBalancerName'))]",
+    "lbRuleName": "WebAppTCP",
     "natPoolName": "[concat(variables('namingInfix'), 'natpool')]",
     "bePoolName": "[concat(variables('namingInfix'), 'bepool')]",
     "natStartPort": 50000,
@@ -112,6 +120,9 @@
     "nicName": "[concat(variables('namingInfix'), 'nic')]",
     "ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
     "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/loadBalancerFrontEnd')]",
+    "backEndAddressPoolID": "[concat(variables('lbID'),'/backendAddressPools/',variables('bePoolName'))]",
+    "probeName": "WebAppProbeTCP",
+    "probeID": "[concat(variables('lbID'),'/probes/',variables('probeName'))]",
     "osType": {
       "publisher": "RedHat",
       "offer": "RHEL",
@@ -149,6 +160,8 @@
           {
             "name": "LoadBalancerFrontEnd",
             "properties": {
+              "privateIPAddress": "[variables('loadBalancerPrivateIPAddress')]",
+              "privateIPAllocationMethod": "Static",
               "subnet": {
                 "id": "[variables('subnetRef')]"
               }
@@ -173,6 +186,39 @@
               "backendPort": "[variables('natBackendPort')]"
             }
           }
+        ],
+        "probes": [
+          {
+            "name": "[variables('probeName')]",
+            "properties": {
+              "protocol": "Tcp",
+              "port": 80,
+              "intervalInSeconds": 5,
+              "numberOfProbes": 5
+            }
+          }
+        ],
+        "loadBalancingRules": [
+            {
+              "name": "[variables('lbRuleName')]",
+              "properties": {
+                    "frontendIPConfiguration": {
+                      "id": "[variables('frontEndIPConfigID')]"
+                    },
+                    "frontendPort": 80,
+                    "backendPort": 80,
+                    "enableFloatingIP": false,
+                    "idleTimeoutInMinutes": 4,
+                    "protocol": "Tcp",
+                    "loadDistribution": "SourceIPProtocol",
+                    "backendAddressPool": {
+                        "id": "[variables('backEndAddressPoolID')]"
+                    },
+                    "probe": {
+                        "id": "[variables('probeID')]"
+                    }
+                }
+            }
         ]
       }
     },
@@ -182,7 +228,8 @@
       "location": "[resourceGroup().location]",
       "apiVersion": "[variables('computeApiVersion')]",
       "dependsOn": [
-        "storageLoop"
+        "storageLoop",
+        "[variables('loadBalancerName')]"
       ],
       "sku": {
         "name": "[parameters('vmSku')]",

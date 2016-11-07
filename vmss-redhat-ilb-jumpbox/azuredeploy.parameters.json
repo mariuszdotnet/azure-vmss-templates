@@ -20,6 +20,9 @@
     "adminPassword": {
       "value": ""
     },
+    "loadBalancerPrivateIP": {
+      "value": "10.2.0.10"
+    },
     "existingSubnetName": {
       "value": "data"
     },

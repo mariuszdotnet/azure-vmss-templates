@@ -1,6 +1,12 @@
 # Simple deployment of a VM Scale Set of RedHat Linux VMs with Tomcat Webserver via VM Extensions
 
-This template allows you to deploy a simple VM Scale Set of Linux VMs using the latest patched version of RedHat Linux 7.2. The template depends on an existing virtual netwkr and subnet in a different resource group.
+This template allows you to deploy a simple VM Scale Set of Linux VMs using the latest patched version of RedHat Linux 7.2. The template depends on an existing virtual network and subnet in a different resource group.
+
+This template has the following:
++ ILB configured on static IP
++ Probe
++ Load balancing with Source IP Affinity Mode - 3-tuple (Source IP, Destination IP, Protocol)
++ Autoscale mannual
 
 To connect to the VMs in the VMSS create a jumpbox with a public IP in the recource group with the virutal network.
 

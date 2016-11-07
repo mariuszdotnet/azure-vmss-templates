@@ -1,15 +1,15 @@
 # Variables that need to be set
 
 # The subscriptionId
-$subscriptionId = '5aec60e9-f535-4bd7-a951-2833f043e918'
+$subscriptionId = '<SUBSCRIPTIONID>'
 # Root path to script, template and parameters.  All have to be in the same folder.
-$rootPath = 'C:\Users\makolo\Documents\GitHub\azure-vmss-templates\vmss-redhat-ilb-jumpbox' # Replace with $PSScriptRoot if you want to run it as a script; EXAMPLE: $rootPath = 'C:\Users\makolo\Documents\GitHub\azure-vmss-templates\vm-simple-rhel'
+$rootPath = '<ROOTPATHTOSCRIPT>' # Replace with $PSScriptRoot if you want to run it as a script; EXAMPLE: $rootPath = 'C:\Users\makolo\Documents\GitHub\azure-vmss-templates\vm-simple-rhel'
 # Name of the resource group
-$resourceGroupName = 'vmss-rg'
+$resourceGroupName = '<RESOURCEGROUPNAME>'
 # Resource Group Location 
-$resourceGroupLocation = 'East US 2' # Run <Get-AzureLocation> to find out azure locations; EXAMPLE: 'East US 2'
+$resourceGroupLocation = '<REGION>' # Run <Get-AzureLocation> to find out azure locations; EXAMPLE: 'East US 2'
 # Name of the deployment
-$deploymentName = 'applebite'
+$deploymentName = '<DEPLOYMENTNAME>'
 
 Login-AzureRmAccount
 
@@ -31,13 +31,3 @@ New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -Reso
 
 # Delete the deployment
 Remove-AzureRmResourceGroup $resourceGroupName
-
-#VMSS Network Interface Defenition
-Get-Help New-AzureRmVmssIpConfig -Detailed
-Get-Help Add-AzureRmVmssNetworkInterfaceConfiguration -Detailed
-
-# Regular VM Network Interface Defenition
-Get-Help New-AzureRmNetworkInterface -Detailed
-
-
-
