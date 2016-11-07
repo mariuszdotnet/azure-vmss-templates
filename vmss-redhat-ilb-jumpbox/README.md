@@ -6,7 +6,7 @@ This template has the following:
 + ILB configured on static IP
 + Probe
 + Load balancing with Source IP Affinity Mode - 3-tuple (Source IP, Destination IP, Protocol)
-+ Autoscale mannual
++ Autoscale manual
 
 To connect to the VMs in the VMSS create a jumpbox with a public IP in the recource group with the virutal network.
 
