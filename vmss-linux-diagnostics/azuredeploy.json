@@ -49,13 +49,13 @@
     "LADstorageAccountName": {
       "type": "securestring",
       "metadata": {
-        "description": "Storage Account for LAD Diagnostics"
+        "description": "Storage Account for LAD Diagnostics Extension"
       }
     },
     "LADstorageAccountKey": {
       "type": "securestring",
       "metadata": {
-        "description": "Storage Account Key for LAD Diagnostics"
+        "description": "Storage Account Key for LAD Diagnostics Extension"
       }
     }
   },

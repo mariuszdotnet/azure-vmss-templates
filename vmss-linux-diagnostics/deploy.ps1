@@ -10,6 +10,8 @@ $resourceGroupName = '<resourceGroupName>'
 $resourceGroupLocation = '<resourceGroupLocation>' # Run <Get-AzureLocation> to find out azure locations; EXAMPLE: 'East US 2'
 # Name of the deployment
 $deploymentName = '<deploymentName>'
+# Key Vault Nme
+$keyVaultName = '<keyVaultName>'
 
 Login-AzureRmAccount
 
@@ -28,6 +30,31 @@ New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -Reso
 
 # Input parameters manually via CLI
 New-AzureRmResourceGroupDeployment -Mode Incremental -Name $deploymentName -ResourceGroupName $resourceGroupName -TemplateFile "$rootPath\azuredeploy.json"
+
+
+
+# Create storage
+# NEED TO UPDATE THIS
+
+param
+(
+    [Parameter(Mandatory=$true, HelpMessage="Provide a password to store in the KeyVault")]
+    [securestring] $password
+)
+
+#create the keyvault. note that this command is not idempotent.
+$vault = New-AzureRmKeyVault -VaultName $keyVaultName -ResourceGroupName $resourceGroupName -EnabledForTemplateDeployment -Location $resourceGroupLocation
+
+#create/set the secret
+$secret = Set-AzureKeyVaultSecret -VaultName $keyVaultName -Name LADStorageAccesstKey -SecretValue $password
+
+#echo the vault id
+Write-Host Vault Id: $vault.ResourceId
+
+#echo the vault secret
+Write-Host Secret Id: $secret.Name
+
+
 
 # Delete the deployment
 Remove-AzureRmResourceGroup $resourceGroupName
