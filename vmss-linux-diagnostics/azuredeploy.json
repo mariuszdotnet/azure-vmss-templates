@@ -12,10 +12,7 @@
     "ubuntuOSVersion": {
       "type": "string",
       "defaultValue": "16.04.0-LTS",
-      "allowedValues": [
-        "14.04.4-LTS",
-        "16.04.0-LTS"
-      ],
+      "allowedValues": [],
       "metadata": {
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values are: 15.10, 14.04.4-LTS."
       }
@@ -52,10 +49,10 @@
         "description": "Storage Account for LAD Diagnostics Extension"
       }
     },
-    "LADstorageAccountKey": {
+    "LADstorageAccountSasToken": {
       "type": "securestring",
       "metadata": {
-        "description": "Storage Account Key for LAD Diagnostics Extension"
+        "description": "Storage Account SAS Token for LAD Diagnostics Extension"
       }
     }
   },
@@ -85,7 +82,7 @@
       "version": "latest"
     },
     "imageReference": "[variables('osType')]",
-    "LADstorageAccountKey": "[parameters('LADstorageAccountKey')]",
+    "LADstorageAccountSasToken": "[parameters('LADstorageAccountSasToken')]",
     "LADstorageAccountName": "[parameters('LADstorageAccountName')]",
     "computeApiVersion": "2016-04-30-preview",
     "networkApiVersion": "2016-03-30",
@@ -234,21 +231,51 @@
                 "name": "LinuxDiagnostic",
                 "location": "[resourceGroup().location]",
                 "properties": {
-                  "publisher": "Microsoft.OSTCExtensions",
+                  "publisher": "Microsoft.Azure.Diagnostics",
                   "type": "LinuxDiagnostic",
-                  "typeHandlerVersion": "2.3",
+                  "typeHandlerVersion": "3.0",
                   "autoUpgradeMinorVersion": true,
                   "settings": {
-                    "fileCfg": [
+                  "ladCfg": {
+                      "diagnosticMonitorConfiguration": {
+                          "metrics": {
+                            "resourceId": "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+                             "metricAggregation" : [
+                                { "scheduledTransferPeriod" : "PT1M" }
+                            ]
+                          }
+                      },
+                      "sampleRateInSeconds": 60
+                  },
+                  "perfCfg": [
+                      {
+                        "query": "SELECT PercentProcessorTime, PercentIdleTime FROM SCX_ProcessorStatisticalInformation WHERE Name='_TOTAL'",
+                        "frequency": 60,
+                        "sinks": "LinuxCpuJsonBlob"
+                      }
+                    ],
+                    "fileLogs": [
                       {
                         "file": "/var/log/cloud-init.log",
-                        "table": "cloudinit"
+                        "sinks": "FilelogJsonBlob"
                       }
-                    ]
+                    ]                   
                   },
                   "protectedSettings": {
                     "storageAccountName": "[variables('LADstorageAccountName')]",
-                    "storageAccountKey": "[variables('LADstorageAccountKey')]"
+                    "storageAccountSasToken": "[variables('LADstorageAccountSasToken')]",
+                    "sinksConfig": {
+                      "sink": [
+                        {
+                            "name": "LinuxCpuJsonBlob",
+                            "type": "JsonBlob"
+                        },
+                        {
+                            "name": "FilelogJsonBlob",
+                            "type": "JsonBlob"
+                        }    
+                      ]
+                    }
                   }
                 }
               }

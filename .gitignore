@@ -1,0 +1,5 @@
+# Ignore local setting files
+vm-win/local/*
+vmss-redhat-ilb-jumpbox/local/*
+vmss-linux-diagnostics/local/*
+vm-simple-rhel/*

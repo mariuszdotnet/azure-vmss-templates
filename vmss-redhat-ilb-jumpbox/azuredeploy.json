@@ -132,7 +132,8 @@
     "imageReference": "[variables('osType')]",
     "computeApiVersion": "2016-03-30",
     "networkApiVersion": "2016-03-30",
-    "storageApiVersion": "2015-06-15"
+    "storageApiVersion": "2015-06-15",
+    "insightsApiVersion": "2015-04-01"
   },
   "resources": [
     {
@@ -210,7 +211,7 @@
                     "enableFloatingIP": false,
                     "idleTimeoutInMinutes": 4,
                     "protocol": "Tcp",
-                    "loadDistribution": "SourceIPProtocol",
+                    "loadDistribution": "Default",
                     "backendAddressPool": {
                         "id": "[variables('backEndAddressPoolID')]"
                     },
@@ -303,7 +304,7 @@
                   "autoUpgradeMinorVersion": true,
                   "settings": {
                     "fileUris": [
-                      "https://raw.githubusercontent.com/mariuszdotnet/azure-vmss-templates/devbranch/vmss-redhat-ilb-jumpbox/scripts/tomcat-setup-redhat.sh"
+                      "https://raw.githubusercontent.com/mariuszdotnet/azure-vmss-templates/master/vmss-redhat-ilb-jumpbox/scripts/tomcat-setup-redhat.sh"
                     ],
                     "commandToExecute": "[concat('sh tomcat-setup-redhat.sh',' ',parameters('adminUsername'),' ',parameters('tomcatUserName'),' ',parameters('tomcatPassword'),' ',parameters('sshPassPhrase'))]"
                   }
@@ -312,6 +313,98 @@
             ]
           }
         }
+      }
+    },
+      {
+      "type": "Microsoft.Insights/autoscaleSettings",
+      "apiVersion": "[variables('insightsApiVersion')]",
+      "name": "autoscalewad",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[concat('Microsoft.Compute/virtualMachineScaleSets/', variables('namingInfix'))]"
+      ],
+      "properties": {
+        "name": "autoscalewad",
+        "targetResourceUri": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/',  resourceGroup().name, '/providers/Microsoft.Compute/virtualMachineScaleSets/', variables('namingInfix'))]",
+        "enabled": true,
+        "profiles": [
+          {
+            "name": "Profile1",
+            "capacity": {
+              "minimum": "3",
+              "maximum": "12",
+              "default": "3"
+            },
+            "rules": [
+              {
+                "metricTrigger": {
+                  "metricName": "Percentage CPU",
+                  "metricNamespace": "",
+                  "metricResourceUri": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/',  resourceGroup().name, '/providers/Microsoft.Compute/virtualMachineScaleSets/', variables('namingInfix'))]",
+                  "timeGrain": "PT1M",
+                  "statistic": "Average",
+                  "timeWindow": "PT5M",
+                  "timeAggregation": "Average",
+                  "operator": "GreaterThan",
+                  "threshold": 10.0
+                },
+                "scaleAction": {
+                  "direction": "Increase",
+                  "type": "ChangeCount",
+                  "value": "1",
+                  "cooldown": "PT1M"
+                }
+              },
+              {
+                "metricTrigger": {
+                  "metricName": "Percentage CPU",
+                  "metricNamespace": "",
+                  "metricResourceUri": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/',  resourceGroup().name, '/providers/Microsoft.Compute/virtualMachineScaleSets/', variables('namingInfix'))]",
+                  "timeGrain": "PT1M",
+                  "statistic": "Average",
+                  "timeWindow": "PT5M",
+                  "timeAggregation": "Average",
+                  "operator": "LessThan",
+                  "threshold": 5.0
+                },
+                "scaleAction": {
+                  "direction": "Decrease",
+                  "type": "ChangeCount",
+                  "value": "1",
+                  "cooldown": "PT5M"
+                }
+              }
+            ]
+          },
+          {
+         "name": "Weekday_Morning_Hours_Scale",
+         "capacity": {
+           "minimum": "1",
+           "maximum": "2",
+           "default": "1"
+         },
+         "rules": [],
+         "recurrence": {
+           "frequency": "Week",
+           "schedule": {
+             "timeZone": "Eastern Standard Time",
+             "days": [
+               "Monday",
+               "Tuesday",
+               "Wednesday",
+               "Thursday",
+               "Friday"
+             ],
+             "hours": [
+               8
+             ],
+             "minutes": [
+               0
+             ]
+           }
+         }
+       }
+        ]
       }
     }
   ]

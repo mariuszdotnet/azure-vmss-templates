@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmSku": {
-      "value": "Standard_A1"
+      "value": "Standard_A2"
     },
     "redHatOSVersion": {
       "value": "7.2"
@@ -15,13 +15,13 @@
       "value": 2
     },
     "adminUsername": {
-      "value": "mariuszdotnet"
+      "value": "USERNAME"
     },
     "adminPassword": {
-      "value": ""
+      "value": "PASSWORD"
     },
     "loadBalancerPrivateIP": {
-      "value": "10.2.0.10"
+      "value": "10.2.0.20"
     },
     "existingSubnetName": {
       "value": "data"
@@ -33,11 +33,11 @@
       "value": "vmss-vnet-rg"
     },
      "tomcatUserName": {
-      "value": "mariuszdotnet"
+      "value": "USERNAME"
     },
 
     "tomcatPassword": {
-      "value": ""
+      "value": "PASSWORD"
     },
     "sshPassPhrase": {
       "value": "tomcatwebserver"

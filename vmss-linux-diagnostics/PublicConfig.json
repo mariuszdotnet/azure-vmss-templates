@@ -1,9 +1,0 @@
-{
-    "fileCfg" :
-    [
-        {
-            "file" : "/var/log/cloud-init.log",
-            "table" : "cloudinit"
-         }
-    ]
-}
