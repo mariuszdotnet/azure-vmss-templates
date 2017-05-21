@@ -257,6 +257,7 @@
                     "fileLogs": [
                       {
                         "file": "/var/log/cloud-init.log",
+                        "table": "FilelogJsonBlob",
                         "sinks": "FilelogJsonBlob"
                       }
                     ]                   
