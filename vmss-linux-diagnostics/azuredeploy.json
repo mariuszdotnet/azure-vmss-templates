@@ -238,6 +238,7 @@
                   "settings": {
                   "ladCfg": {
                       "diagnosticMonitorConfiguration": {
+                          "eventVolume": "Medium",
                           "metrics": {
                             "resourceId": "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
                              "metricAggregation" : [
@@ -245,7 +246,7 @@
                             ]
                           }
                       },
-                      "sampleRateInSeconds": 60
+                      "sampleRateInSeconds": 15
                   },
                   "perfCfg": [
                       {
