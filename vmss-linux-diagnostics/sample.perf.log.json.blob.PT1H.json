@@ -1,0 +1,710 @@
+{"records":[
+{ "time" : "2017-05-23T02:00:29.1689040Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:01:29.1688630Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:02:29.1688450Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:03:29.1688860Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:04:29.1688900Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:05:29.1688550Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:06:29.1688670Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:07:29.1688610Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:08:29.1688940Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:09:29.1688770Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:10:29.1688650Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:11:29.1688280Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:12:29.1688560Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:13:29.1688670Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:14:29.1688670Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:15:29.1688670Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:16:29.1688830Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:17:29.1688400Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:18:29.1688990Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:19:29.1688490Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:20:29.1688660Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:21:29.1688700Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:22:29.1688830Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:23:29.1688890Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:24:29.1688880Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:25:29.1688350Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:26:29.1688430Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:27:29.1688900Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:28:29.1688840Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:29:29.1688790Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:30:29.1689630Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:31:29.1688760Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:32:29.1689070Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:33:29.1689160Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:34:29.1688810Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:35:29.1688740Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:36:29.1688670Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:37:29.1688540Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:38:29.1689080Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:39:29.1688370Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:40:29.1688760Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:41:29.1688760Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:42:29.1688970Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:43:29.1688870Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:44:29.1688950Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:45:29.1688630Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:46:29.1688680Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:47:29.1689030Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:48:29.1689080Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:49:29.1688710Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:50:29.1688780Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:51:29.1688470Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:52:29.1688900Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:53:29.1688910Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:54:29.1688970Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:55:29.1691780Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:56:29.1688410Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:57:29.1688710Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-23T02:58:29.1689020Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "PercentIdleTime" : 100,
+    "PercentProcessorTime" : 0,
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+}
+]}

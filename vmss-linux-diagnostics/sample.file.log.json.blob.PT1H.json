@@ -1,0 +1,41 @@
+{"records":[
+{ "time" : "2017-05-22T19:21:41.0000000Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "Msg" : "Mariusz test line 1",
+    "FileTag" : "var.log.cloud-init.log",
+    "FluentdIngestTimestamp" : "2017-05-22T19:21:41Z",
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-22T19:22:15.0000000Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "Msg" : "May 22 3:21 Mariusz test line 2",
+    "FileTag" : "var.log.cloud-init.log",
+    "FluentdIngestTimestamp" : "2017-05-22T19:22:15Z",
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+},
+{ "time" : "2017-05-22T19:22:23.0000000Z",
+  "resourceId" : "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
+  "properties" : {
+    "Msg" : "May 22 3:22 Mariusz test line 2",
+    "FileTag" : "var.log.cloud-init.log",
+    "FluentdIngestTimestamp" : "2017-05-22T19:22:23Z",
+    "DeploymentId" : "a1d5cfeb-1a2a-4118-af23-e92ddfc17c25",
+    "Host" : "gremlinsj000000"
+  },
+  "category" : "Unknown",
+  "level" : "Unknown",
+  "operationName" : "Unknown"
+}
+]}
