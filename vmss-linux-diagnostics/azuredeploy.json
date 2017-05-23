@@ -242,9 +242,7 @@
                           "metrics": {
                             "resourceId": "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
                              "metricAggregation" : [
-                                { "scheduledTransferPeriod" : "PT1M" },
-                                { "scheduledTransferPeriod" : "PT5M" },
-                                { "scheduledTransferPeriod" : "PT1H" }
+                                { "scheduledTransferPeriod" : "PT1M" }
                             ]
                           }
                       },
