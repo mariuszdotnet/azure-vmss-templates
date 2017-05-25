@@ -238,23 +238,11 @@
                   "settings": {
                   "ladCfg": {
                       "diagnosticMonitorConfiguration": {
-                          "eventVolume": "Medium",
                           "metrics": {
-                            "resourceId": "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj",
-                             "metricAggregation" : [
-                                { "scheduledTransferPeriod" : "PT1M" }
-                            ]
+                            "resourceId": "/subscriptions/5aec60e9-f535-4bd7-a951-2833f043e918/resourceGroups/vmss-lad-rg/providers/Microsoft.Compute/virtualMachineScaleSets/gremlinsj"
                           }
-                      },
-                      "sampleRateInSeconds": 60
-                  },
-                  "perfCfg": [
-                      {
-                        "query": "SELECT PercentProcessorTime, PercentIdleTime FROM SCX_ProcessorStatisticalInformation WHERE Name='_TOTAL'",
-                        "frequency": 60,
-                        "sinks": "LinuxCpuJsonBlob"
                       }
-                    ],
+                  },
                     "fileLogs": [
                       {
                         "file": "/var/log/cloud-init.log",
@@ -267,10 +255,6 @@
                     "storageAccountSasToken": "[variables('LADstorageAccountSasToken')]",
                     "sinksConfig": {
                       "sink": [
-                        {
-                            "name": "LinuxCpuJsonBlob",
-                            "type": "JsonBlob"
-                        },
                         {
                             "name": "FilelogJsonBlob",
                             "type": "JsonBlob"
