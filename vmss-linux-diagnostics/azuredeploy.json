@@ -9,14 +9,6 @@
         "description": "Size of VMs in the VM Scale Set."
       }
     },
-    "ubuntuOSVersion": {
-      "type": "string",
-      "defaultValue": "16.04.0-LTS",
-      "allowedValues": [],
-      "metadata": {
-        "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version. Allowed values are: 15.10, 14.04.4-LTS."
-      }
-    },
     "vmssName": {
       "type": "string",
       "metadata": {
@@ -78,7 +70,7 @@
     "osType": {
       "publisher": "Canonical",
       "offer": "UbuntuServer",
-      "sku": "[parameters('ubuntuOSVersion')]",
+      "sku": "16.04.0-LTS",
       "version": "latest"
     },
     "imageReference": "[variables('osType')]",
@@ -245,7 +237,8 @@
                   },
                     "fileLogs": [
                       {
-                        "file": "/var/log/cloud-init.log",
+                        "file": "/var/log/waagent.log",
+                        "name": "waagentFilelogJsonBlob",
                         "sinks": "FilelogJsonBlob"
                       }
                     ]                   
@@ -256,7 +249,7 @@
                     "sinksConfig": {
                       "sink": [
                         {
-                            "name": "FilelogJsonBlob",
+                            "name": "waagentFilelogJsonBlob",
                             "type": "JsonBlob"
                         }    
                       ]
