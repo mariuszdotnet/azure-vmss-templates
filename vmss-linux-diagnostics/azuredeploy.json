@@ -68,9 +68,9 @@
     "ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
     "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/loadBalancerFrontEnd')]",
     "osType": {
-      "publisher": "Canonical",
-      "offer": "UbuntuServer",
-      "sku": "16.04.0-LTS",
+      "publisher": "RedHat",
+      "offer": "RHEL",
+      "sku": "7.2",
       "version": "latest"
     },
     "imageReference": "[variables('osType')]",
