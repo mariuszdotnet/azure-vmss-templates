@@ -238,8 +238,11 @@
                     "fileLogs": [
                       {
                         "file": "/var/log/waagent.log",
-                        "name": "FilelogJsonBlob",
                         "sinks": "FilelogJsonBlob"
+                      },
+                      {
+                        "file": "/var/log/messages",
+                        "sinks": "MessagesJsonBlob"
                       }
                     ]                   
                   },
@@ -250,6 +253,10 @@
                       "sink": [
                         {
                             "name": "FilelogJsonBlob",
+                            "type": "JsonBlob"
+                        },
+                        {
+                            "name": "MessagesJsonBlob",
                             "type": "JsonBlob"
                         }    
                       ]
