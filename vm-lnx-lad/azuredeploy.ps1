@@ -12,7 +12,7 @@ Select-AzureSubscription -SubscriptionId $subscriptionId
 # RG name of the VM
 $RGName = 'linux-vm-rg'
 
-# VM name
+# VM name - This has been tested with Azure Gallery RHEL 7.2
 $VmName = 'linuxvm'
 
 # Location of the resources
