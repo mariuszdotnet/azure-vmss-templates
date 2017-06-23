@@ -3,3 +3,4 @@ vm-win/local/*
 vmss-redhat-ilb-jumpbox/local/*
 vmss-linux-diagnostics/local/*
 vm-simple-rhel/*
+vm-lnx-lad/azuredeploy.local.ps1
